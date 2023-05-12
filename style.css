@@ -1,4 +1,4 @@
-* {
+  * {
 	margin: 0;
 	padding: 0;
 }
@@ -8,6 +8,7 @@
 	--cinza-secundario: #C0C0C0;
 	--botao-azul: #167BF7;
 	--cor-de-fundo: #00030C;
+	--fonte-principal: 'Inter';
 }
 
 body {
@@ -19,8 +20,50 @@ body {
 	background-image: url("img/Background.png");
 	background-repeat: no-repeat;
 	background-size: contain;
+	font-family: var(--fonte-principal);
+	font-size: 16px;
+	font-weight: 400;
 }
 
 .container {
 	height: 100vh;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	text-align: center;
+}
+
+.container__titulo {
+	font-size: 28px;
+	font-weight: 700;
+	padding: 0.5em;
+}
+
+.container__img {
+	padding: 1em;
+}
+
+.container__botão {
+	background-color: var(--botao-azul);
+	border-radius: 4px;
+	padding: 1em;
+	color: var(--branco-principal);
+	display: block;
+	text-decoration: none;   
+}
+
+.separação__botão {
+	padding: 0.5em;
+	background-color: transparent;
+}
+
+.botão__secundario {
+	background-color: transparent;
+	border: 2px solid var(--branco-principal);
+	padding: 1em;
+}
+
+.container__aviso {
+	font-size: 12px;
+	color: var(--cinza-secundario);
+	padding: 1em;
 }
